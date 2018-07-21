@@ -12,6 +12,6 @@ app.get('/',(req,res)=>{
 
 app.use(express.static(__dirname+'/public'));
 app.set('view engine','hbs');
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log(`Server running on port: ${port}`);
 });
